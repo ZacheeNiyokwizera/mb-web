@@ -368,12 +368,11 @@ img {
 
 .menu__container {
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
 }
 
 .menu__content {
-    width: 120%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -385,11 +384,9 @@ img {
 }
 
 .menu__img {
-    width: 120%;
     border-radius: 5%;
     align-self: center;
     margin-bottom: var(--mb-2);
-    padding: -90px;
 }
 
 .menu__name,
