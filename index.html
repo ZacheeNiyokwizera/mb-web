@@ -52,6 +52,7 @@
                     <h1 class="home__title">Mwanamboka</h1>
                     <h2 class="home__subtitle">Boost your Style Sense<br> and set trends.</h2>
                     <a href="#menu" class="button">View Products</a>
+                    <a class="show-modal">Contact Us</a>
                 </div>
 
                 <img src="assets/img/home.png" alt="" class="home__img">
@@ -162,9 +163,7 @@
                     <h3 class="menu__name ">T-shirt</h3>
                     <span class="menu__detail ">Awesome T-shirt</span>
                     <span class="menu__preci ">$22.00</span>
-                    <a href="# " class="button menu__button ">
-                        <h5>Buy now</h5>
-                    </a>
+
                 </div>
 
                 <div class="menu__content ">
@@ -172,9 +171,9 @@
                     <h3 class="menu__name ">Hoodie</h3>
                     <span class="menu__detail ">Awesome Hoodie</span>
                     <span class="menu__preci ">$22.00</span>
-                    <a href="# " class="button menu__button ">
+                    <!-- <button class="button menu__button ">
                         <h5>Buy now</h5>
-                    </a>
+                    </button> -->
                 </div>
 
                 <div class="menu__content ">
@@ -182,9 +181,7 @@
                     <h3 class="menu__name ">Polo</h3>
                     <span class="menu__detail ">Awesome Polo</span>
                     <span class="menu__preci ">$12.00</span>
-                    <a href="# " class="button menu__button ">
-                        <h5>Buy now</h5>
-                    </a>
+
                 </div>
 
                 <div class="menu__content ">
@@ -192,14 +189,30 @@
                     <h3 class="menu__name ">Hat</h3>
                     <span class="menu__detail ">Awesome Hat</span>
                     <span class="menu__preci ">$9.50</span>
-                    <a href="# " class="button menu__button ">
-                        <h5>Buy now</h5>
-                    </a>
+
                 </div>
             </div>
         </section>
 
 
+        <div class="modal hidden">
+            <button class="btn--close-modal">&times;</button>
+            <h2 class="modal__header">
+                Order your <span class="highlight">Mwanamboka </span> outfit in just <span class="highlight"> few seconds</span>
+            </h2>
+            <form class="modal__form">
+                <label>Full Name</label>
+                <input type="text" />
+                <label>Number of Items  </label>
+                <input type="number" placeholder="eg: 2 T-shirts" />
+                <label>Phone number </label>
+                <input type="number" />
+                <label>  Address</label>
+                <input type="email" />
+                <button class="btn">Next step &rarr;</button>
+            </form>
+        </div>
+        <div class="overlay hidden"></div>
 
 
         <!--========== CONTACT US ==========-->
@@ -212,7 +225,7 @@
                 </div>
 
                 <div class="contact__button ">
-                    <a href="# " class="button ">Contact us now</a>
+                    <a class="show-modal">Contact us now</a>
                 </div>
             </div>
         </section>
@@ -265,6 +278,8 @@
 
         <p class="footer__copy ">&#169; 2021 Mwanamboka Ltd. All right reserved</p>
     </footer>
+
+
 
     <!--========== SCROLL REVEAL ==========-->
     <script src="https://unpkg.com/scrollreveal "></script>
